@@ -1,0 +1,10 @@
+<div class="favorites-sidebar">
+    <p class="favorites-sidebar-title">Favorites Posts</p>
+    <div class="posts-wrapper">
+        <div *ngFor="let post of posts" class="post-item">
+            <app-post [post]="post">
+                <button class="post-btn" (click)="emitDeleteFromFavorites(post)">Unselect</button>
+            </app-post>
+        </div>
+    </div>
+</div>

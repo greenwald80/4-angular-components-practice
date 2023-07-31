@@ -1,0 +1,18 @@
+<!-- <div>
+    <p>{{post.title}}</p>
+    <p>{{post.desc}}</p>
+</div> -->
+
+<!-- <app-post [post]="post" class="post-item"></app-post> -->
+
+<!-- <app-recommendations-list [posts]="posts"></app-recommendations-list> -->
+
+<div class="main-page-content">
+    <div class="left-side">
+        <app-sidebar [posts]="favoritesPosts" (onDeleteFromFavorites)="onDeleteFromFavoritesHandler($event)"></app-sidebar>
+    </div>
+    <div class="right-side">
+        <app-recommendations-list [posts]="recommendedPosts"
+            (onAddToFavorites)="onAddToFavoritesHandler($event)"></app-recommendations-list>
+    </div>
+</div>

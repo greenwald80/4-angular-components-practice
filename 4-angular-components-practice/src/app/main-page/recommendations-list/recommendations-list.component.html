@@ -1,0 +1,21 @@
+<!-- <app-post *ngFor="let post of posts" [post]="post"></app-post> -->
+
+<!-- <p class="recommendations-title">Your recommendations</p>
+<div class="posts-wrapper">
+    <div class="post-item" *ngFor="let post of posts">
+        <app-post [post]="post"><button>Select</button>
+            <p id="post__text">id = post__text</p>
+            <p class="post__text">class = post__text</p>
+            <p post__text>attribute = post__text</p>
+        </app-post>
+    </div>
+</div> -->
+
+<p class="recommendations-title">Your recommendations</p>
+<div class="posts-wrapper">
+    <div class="post-item" *ngFor="let post of posts">
+        <app-post [post]="post">
+            <button class="post-btn" (click)="emitAddToFavorites(post)">Select</button>
+        </app-post>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+.main-page-content {
+    display: flex;
+  }
+  
+  .right-side {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .left-side {
+    width: 20%;
+    height: 100%;
+    padding-top: 30px;
+  }
+  
+  .post-item {
+    display: block;
+    height: 150px;
+  }
